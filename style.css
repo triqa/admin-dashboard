@@ -9,8 +9,12 @@
 }
 
 :root {
-  --main-colour: rgb(57, 155, 240);
+  --main-colour: rgb(31, 123, 203);
   --bg-color: rgb(218, 221, 222);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -124,14 +128,36 @@ button {
 
 .sidebar {
   display: grid;
+  grid-template-rows: 62px 1fr 1fr;
   grid-area: sidebar;
   background-color: var(--main-colour);
+  color: white;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 7px;
+}
+
+.branding img {
+  width: 30px;
+}
+
+.sidebar-nav {
+  padding: 25px;
 }
 
 .sidebar ul {
   display: grid;
   gap: 1.2rem;
   list-style: none;
+}
+
+.sidebar ul li {
+  display: flex;
+  gap: 10px;
 }
 
 .icon {

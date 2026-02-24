@@ -8,6 +8,11 @@
   /* overflow: hidden; */
 }
 
+:root {
+  --main-colour: rgb(57, 155, 240);
+  --bg-color: rgb(218, 221, 222);
+}
+
 .container {
   min-height: 100vh;
   display: grid;
@@ -21,7 +26,15 @@
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   grid-area: header;
-  background-color: rgb(202, 172, 172);
+  background-color: rgb(255, 255, 255);
+  box-shadow:
+    rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.header > * {
+  display: flex;
+  padding: 5px;
 }
 
 .main {
@@ -31,7 +44,7 @@
     "projects projects announcements"
     "projects projects trending";
   grid-area: main;
-  background-color: rgb(174, 174, 174);
+  background-color: var(--bg-color);
 }
 
 #projects {
@@ -64,7 +77,6 @@
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
-  align-items: stretch;
   height: 100%;
 }
 
@@ -73,14 +85,31 @@
   gap: 5px;
 }
 
+#trending .rows {
+  display: grid;
+  gap: 5px;
+  height: 100%;
+}
+
 .sidebar {
   display: grid;
   grid-area: sidebar;
-  background-color: lightblue;
+  background-color: var(--main-colour);
 }
 
 .sidebar ul {
   display: grid;
   gap: 1.2rem;
   list-style: none;
+}
+
+.icon {
+  width: 1.2rem;
+  display: inline-block;
+}
+
+input[type="search"] {
+  appearance: none;
+  border: 0;
+  background-color: var(--bg-color);
 }

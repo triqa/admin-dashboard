@@ -32,9 +32,13 @@
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
+/* Used to align each setion of the header vertically */
 .header > * {
   display: flex;
   padding: 5px;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 30px;
 }
 
 .header .search {
@@ -42,7 +46,11 @@
   gap: 7px;
 }
 
-.header-nav {
+.header #user-info-1 {
+  justify-self: end;
+}
+
+.header .header-nav {
   display: grid;
   grid-auto-flow: column;
   gap: 20px;

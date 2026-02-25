@@ -182,12 +182,11 @@ button {
 
 .sidebar {
   display: grid;
-  grid-template-rows: 70px 1fr 1fr;
+  grid-template-rows: 100px 25% 20%;
   grid-area: sidebar;
   background-color: var(--main-colour);
   color: white;
   padding: 20px 0;
-  align-items: center;
   justify-content: center;
 }
 
@@ -196,6 +195,7 @@ button {
   align-items: center;
   justify-self: center;
   gap: 7px;
+  align-self: start;
 }
 
 .branding img {
@@ -203,13 +203,14 @@ button {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .sidebar ul {
   display: grid;
   gap: 1.2rem;
   list-style: none;
+  font-size: 1.2rem;
 }
 
 .sidebar ul li {

@@ -186,8 +186,9 @@ button {
   grid-area: sidebar;
   background-color: var(--main-colour);
   color: white;
-  padding: 0 30px 20px;
+  padding: 20px 0;
   align-items: center;
+  justify-content: center;
 }
 
 .branding {
@@ -202,7 +203,7 @@ button {
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .sidebar ul {

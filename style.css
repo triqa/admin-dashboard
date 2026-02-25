@@ -23,7 +23,7 @@ body {
 .container {
   min-height: 100vh;
   display: grid;
-  grid-template: auto 1fr / auto 1fr;
+  grid-template: auto 1fr / 16% 1fr;
   grid-template-areas:
     "sidebar header"
     "sidebar main";
@@ -77,12 +77,13 @@ button {
 
 .main {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr 22%;
+  grid-template: 1fr 1fr / 1fr 1fr 26%;
   grid-template-areas:
     "projects projects announcements"
     "projects projects trending";
   grid-area: main;
   background-color: var(--bg-color);
+  padding: 20px;
 }
 
 #projects {
@@ -101,17 +102,14 @@ button {
 .main > .section {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  height: 100%;
+  padding: 20px;
 }
 
 #projects .card,
 #announcements .row,
 #trending .row {
   background-color: white;
-}
-
-#projects {
-  margin: 30px;
 }
 
 .main-section-header {
@@ -161,7 +159,6 @@ button {
   background-color: white;
   border-radius: var(--card-border-radius);
   justify-items: center;
-  padding: 10px 0;
   align-content: center;
 }
 
@@ -205,7 +202,7 @@ button {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .sidebar ul {
